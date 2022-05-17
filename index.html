@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <title>Task List</title>
 </head>
 <body>
     
+    <div class="wrapper p-4 m-auto">
+            <h1 class="text-info text-center text-uppercase">Get S*** Done!</h1>
+            <label for="task-item" class="form-label">Enter all the things here:</label>
+            <div class="row">
+            <input type="text" id="task-item" name="task-item" class="col-sm-6 p mx-2 -1 my-3">
+            <button type="submit" class="btn btn-primary col-sm-5 p-1 mx-2 my-3">Add it to the List</button>
+        </div>
+            <ul class="list-group bg-info text-white p-4">
+                <!-- insert li via js -->
+            </ul>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
