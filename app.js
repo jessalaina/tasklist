@@ -34,7 +34,7 @@ btn.addEventListener('click', function() {
 
 // keypress to add task to list
 document.addEventListener('keypress', function(e) {
-    if(e.key === 'Enter') {
+    if(e.key === 'Enter' && input.value.length != 0) {
         addLis();
     }
 })
